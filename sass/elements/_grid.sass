@@ -1,0 +1,67 @@
+// CARD GRID -------------------------------------//
+.card
+    display: grid
+    grid-template: auto / 1fr 1fr
+    align-items: center
+    @media screen and ( max-width: 768px )
+        grid-template-columns: 1fr
+        
+    .right-align
+        @media screen and ( min-width: 768px )     
+            grid-column-start: 2
+            justify-self: end
+    .left-align
+        @media screen and ( min-width: 768px )
+            grid-column-start: 1
+            grid-row-start: 1
+            justify-self: center
+
+// FOOTER GRID ------------------------------------//   
+.footer-container
+    display: grid
+    grid-template-columns: 30% 10% 10% 25%
+    grid-column-gap: 10%
+    grid-row-gap: 30px
+    @media screen and ( max-width: 834px )
+        grid-template-columns: 50% 10% 10%
+    @media screen and ( max-width: 768px )
+        grid-template-columns: 100%
+        grid-column-gap: 0%
+        grid-row-gap: 0%
+    img
+        grid-column: 1/5
+
+    .contact-container
+        display: grid
+        grid-template: repeat(3, auto) / repeat(2, auto)
+        grid-gap: 20px
+
+    .footer-links
+        @media screen and ( max-width: 768px )
+        justify-self: start
+
+    .copywrite
+        grid-row-start: 3
+        grid-column-start: 4
+        @media screen and ( max-width: 834px )
+            grid-row-start: 4
+            grid-column-start: 1
+        @media screen and ( max-width: 768px )
+            grid-row-start: 6
+            justify-self: center
+    .attribution
+        grid-row-start: 3
+        @media screen and ( max-width: 834px )
+            grid-row-start: 5
+        @media screen and ( max-width: 768px )
+            grid-row-start: 7
+            justify-self: center
+
+.right
+    justify-self: end
+
+@media screen and ( max-width: 768px )     
+    .btm-30
+        padding-bottom: 30px
+    .btm-50
+        padding-bottom: 50px

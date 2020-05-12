@@ -1,0 +1,47 @@
+header
+  background-image: url(./img/bg-hero-mobile.svg)
+  background-color: $pale-cyan
+  background-repeat: no-repeat
+  background-size: 100%
+  @media only screen and (min-width: 768px)
+    background-image: url(./img/bg-hero-desktop.svg)
+    background-size: cover
+    min-height: 100%
+
+  .header
+    width: 80%
+    margin: 0 auto
+    @media only screen and (min-width: 768px)
+      width: 90%
+      max-width: 1440px
+      display: grid
+      grid-template-columns: 1fr 55%
+      column-gap: 3em
+      align-items: center
+
+    .image-container
+      padding: 4em 0 3.5em 0
+      img
+        width: 95%
+
+    .text-container
+      text-align: center
+      margin-top: 5rem
+      h1
+        font-size: 1.4em
+      @media only screen and (min-width: 768px)
+        text-align: left
+        h1
+          font-size: 2.2em
+          @media only screen and (min-width: 768px) and (max-width: 1112px)
+            font-size: 1.5em
+
+      p
+        padding-top: 1.5em
+      button
+        margin-top: 2em
+        @media screen and ( max-width: 768px )
+          font-size: 0.75em
+          width: 17em
+          height: 3.5em
+          
