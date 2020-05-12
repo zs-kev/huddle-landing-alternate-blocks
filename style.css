@@ -282,20 +282,24 @@ button {
   margin-right: 0.5em;
   margin-left: 0.5em; }
 
-.footer-container a {
-  color: #c6e4ec;
-  text-decoration: none; }
-  .footer-container a:hover {
-    color: #fff; }
-.footer-container .footer-links a {
+.footer-links a {
   display: grid;
   padding-bottom: 15px;
-  transition: 0.2s ease-in-out; }
-  .footer-container .footer-links a:hover {
-    transform: translateX(5px); }
+  transition: 0.2s ease-in-out;
+  color: #c6e4ec;
+  text-decoration: none; }
+  .footer-links a:hover {
+    transform: translateX(5px);
+    color: #fff; }
 @media screen and (max-width: 768px) {
-  .footer-container .footer-links {
+  .footer-links {
     grid-column-start: 1; } }
+
+.copywrite a, .attribution a {
+  color: #c6e4ec;
+  text-decoration: none; }
+  .copywrite a:hover, .attribution a:hover {
+    color: #fff; }
 
 /* Speech bubble animations */
 @keyframes speech-move1 {
