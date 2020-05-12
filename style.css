@@ -87,8 +87,10 @@ header {
       header .header .image-container img {
         width: 95%; }
     header .header .text-container {
-      text-align: center;
-      margin-top: 5rem; }
+      text-align: center; }
+      @media screen and (max-width: 768px) {
+        header .header .text-container {
+          margin-top: 5rem; } }
       header .header .text-container h1 {
         font-size: 1.4em; }
       @media only screen and (min-width: 768px) {
