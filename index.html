@@ -8,7 +8,8 @@
 
   <script src="https://kit.fontawesome.com/90902dc299.js" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="style.css"></noscript>
 
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
 
@@ -121,16 +122,16 @@
       </div>
 
       <div class="social btm-30">
-        <a href="https://www.facebook.com/frontendmentor" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://twitter.com/frontendmentor" target="_blank" class="margin-both"><i
+        <a href="https://www.facebook.com/frontendmentor" target="_blank" rel="noreferrer"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/frontendmentor" target="_blank" rel="noreferrer" class="margin-both"><i
             class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i></a>
       </div>
 
       <p class="copywrite"> &copy; Copyright 2018 Huddle. All rights reserved.</p>
       <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="https://www.frontendmentor.io/profile/zs-kev" target="_blank">Kevin Simon</a>.
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>.
+        Coded by <a href="https://www.frontendmentor.io/profile/zs-kev" target="_blank" rel="noreferrer">Kevin Simon</a>.
       </p>
 
     </section>
