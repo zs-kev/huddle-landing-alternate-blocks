@@ -117,7 +117,7 @@ main {
   width: 85%;
   margin: 0 auto;
   position: relative;
-  padding-top: 6rem; }
+  padding-top: 7rem; }
   @media screen and (max-width: 768px) {
     main {
       padding-top: 1rem; } }
@@ -264,7 +264,8 @@ button {
   @media only screen and (min-width: 768px) {
     .nav button {
       width: 14.5em;
-      height: 3.5em; } }
+      height: 3.5em;
+      font-size: 0.8em; } }
   .nav button:hover {
     transform: scale(1.04);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1); }
