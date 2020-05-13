@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0; }
@@ -13,17 +13,19 @@ body {
 /* Primary */
 /* Neutral */
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-h1, h2, h3, h4, h5, h6, p, span, li, label, input {
-  font-family: "Poppins", sans-serif;
+h1, h2, h3, h4, h5, h6, span {
+  font-family: Poppins, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-  h1.regular, h2.regular, h3.regular, h4.regular, h5.regular, h6.regular, p.regular, span.regular, li.regular, label.regular, input.regular {
+  h1.regular, h2.regular, h3.regular, h4.regular, h5.regular, h6.regular, span.regular {
     font-weight: 400; }
-  h1.bold, h2.bold, h3.bold, h4.bold, h5.bold, h6.bold, p.bold, span.bold, li.bold, label.bold, input.bold {
+  h1.medium, h2.medium, h3.medium, h4.medium, h5.medium, h6.medium, span.medium {
+    font-weight: 600; }
+  h1.bold, h2.bold, h3.bold, h4.bold, h5.bold, h6.bold, span.bold {
     font-weight: 700; }
 
 h1, h2, p {
@@ -38,10 +40,9 @@ button {
   font-family: "Open Sans", sans-serif;
   font-weight: 700; }
 
-/* Lists */
-li {
-  color: #ebfbff;
-  list-style: none; }
+/* Links */
+a {
+  font-family: "Open Sans", sans-serif; }
 
 .nav {
   width: 90%;
@@ -83,7 +84,7 @@ header {
         column-gap: 3em;
         align-items: center; } }
     header .header .image-container {
-      padding: 4em 0 3.5em 0; }
+      padding: 4em 0 3em 0; }
       header .header .image-container img {
         width: 95%; }
     header .header .text-container {
@@ -116,7 +117,7 @@ main {
   width: 85%;
   margin: 0 auto;
   position: relative;
-  padding-top: 5rem; }
+  padding-top: 6rem; }
   @media screen and (max-width: 768px) {
     main {
       padding-top: 1rem; } }
@@ -163,7 +164,8 @@ main {
     transform: translateX(-50%);
     display: flex;
     flex-direction: column;
-    width: 55%; }
+    width: 55%;
+    padding-top: 50px; }
     @media screen and (max-width: 1024px) {
       main .ready-block {
         width: 85%; } }
@@ -261,8 +263,8 @@ button {
   transition: 0.3s ease-in-out; }
   @media only screen and (min-width: 768px) {
     .nav button {
-      width: 14em;
-      height: 3.3em; } }
+      width: 14.5em;
+      height: 3.5em; } }
   .nav button:hover {
     transform: scale(1.04);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1); }

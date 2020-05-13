@@ -1,9 +1,10 @@
 // Globals ------------------------------------//
 $sans-serif: sans-serif
-$poppins: 'Poppins'
+$poppins: Poppins
 $open-sans: 'Open Sans'
 
 $regular: 400
+$medium: 600
 $bold: 700
 
 body
@@ -11,12 +12,14 @@ body
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
-h1, h2, h3, h4, h5, h6, p, span, li, label, input
+h1, h2, h3, h4, h5, h6, span
   font-family: $poppins, $sans-serif
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
   &.regular
     font-weight: $regular
+  &.medium
+    font-weight: $medium
   &.bold
     font-weight: $bold
 
@@ -32,7 +35,6 @@ button
   font-family: $open-sans, $sans-serif
   font-weight: $bold
 
-/* Lists */
-li
-  color: $pale-cyan
-  list-style: none
+/* Links */
+a
+  font-family: $open-sans, $sans-serif
