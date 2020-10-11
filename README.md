@@ -1,5 +1,7 @@
 # Frontend Mentor - Huddle landing page with alternating feature blocks
 
+Final version can be found <a href="https://zs-kev.github.io/huddle-landing-alternate-blocks/" target="_blank">here</a>
+
 ![Design preview for the Huddle landing page with alternating feature blocks coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
